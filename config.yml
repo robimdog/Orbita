@@ -1,0 +1,65 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Onde as imagens enviadas pelo cliente ficam salvas
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Painel em português
+locale: "pt"
+
+collections:
+  - name: "settings"
+    label: "Textos gerais do site"
+    files:
+      - file: "content/settings.json"
+        label: "Início e contato"
+        name: "settings"
+        fields:
+          - { label: "Texto pequeno acima do título", name: "heroEyebrow", widget: "string" }
+          - { label: "Título (início da frase)", name: "heroTitleBefore", widget: "string" }
+          - { label: "Título (parte destacada)", name: "heroTitleAccent", widget: "string" }
+          - { label: "Título (final, ex: ponto final)", name: "heroTitleAfter", widget: "string" }
+          - { label: "Texto de apoio abaixo do título", name: "heroLead", widget: "text" }
+          - { label: "Número de sites entregues", name: "statSites", widget: "string" }
+          - { label: "Prazo médio de entrega", name: "statPrazo", widget: "string" }
+          - { label: "Nota de satisfação", name: "statSatisfacao", widget: "string" }
+          - { label: "Email de contato", name: "contactEmail", widget: "string" }
+          - { label: "WhatsApp", name: "contactWhatsapp", widget: "string" }
+          - { label: "Local de atendimento", name: "contactLocal", widget: "string" }
+
+  - name: "portfolio"
+    label: "Portfólio"
+    files:
+      - file: "content/portfolio.json"
+        label: "Projetos"
+        name: "portfolio"
+        fields:
+          - label: "Projetos"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Nome do projeto", name: "title", widget: "string" }
+              - { label: "Categoria (ex: Institucional · Advocacia)", name: "category", widget: "string" }
+              - { label: "Descrição curta", name: "description", widget: "text" }
+              - { label: "Cor do card (início do degradê)", name: "color1", widget: "color", default: "#3D5AFE" }
+              - { label: "Cor do card (fim do degradê)", name: "color2", widget: "color", default: "#6C7CFF" }
+
+  - name: "depoimentos"
+    label: "Depoimentos"
+    files:
+      - file: "content/depoimentos.json"
+        label: "Depoimentos"
+        name: "depoimentos"
+        fields:
+          - label: "Depoimentos"
+            name: "items"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Depoimento", name: "quote", widget: "text" }
+              - { label: "Nome do cliente", name: "name", widget: "string" }
+              - { label: "Empresa ou cargo", name: "role", widget: "string" }
+              - { label: "Iniciais (avatar)", name: "initials", widget: "string" }
