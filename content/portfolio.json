@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Studio Verde",
+      "category": "Institucional · Paisagismo",
+      "description": "Site de apresentação com portfólio de projetos e formulário de orçamento.",
+      "color1": "#3D5AFE",
+      "color2": "#6C7CFF"
+    },
+    {
+      "title": "Café Origem",
+      "category": "E-commerce · Cafeteria",
+      "description": "Loja virtual de cafés especiais com pagamento online e clube de assinatura.",
+      "color1": "#00B39B",
+      "color2": "#5FD8C7"
+    },
+    {
+      "title": "Nômade Fit",
+      "category": "Landing page · Consultoria fitness",
+      "description": "Página de vendas para programa de treinos online, focada em captar leads.",
+      "color1": "#14171A",
+      "color2": "#3A3F47"
+    },
+    {
+      "title": "Bela Fio",
+      "category": "E-commerce · Moda",
+      "description": "Loja de roupas artesanais com catálogo de coleções e integração ao Instagram.",
+      "color1": "#FF7A59",
+      "color2": "#FFAB91"
+    },
+    {
+      "title": "Advocacia Reis",
+      "category": "Institucional · Advocacia",
+      "description": "Site institucional sóbrio com áreas de atuação e canal direto pelo WhatsApp.",
+      "color1": "#7C4DFF",
+      "color2": "#B39DFF"
+    },
+    {
+      "title": "Voa Cursos",
+      "category": "Landing page · Educação",
+      "description": "Página de lançamento de curso digital com contagem regressiva e depoimentos.",
+      "color1": "#0091FF",
+      "color2": "#66C1FF"
+    }
+  ]
+}
