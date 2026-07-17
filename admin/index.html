@@ -6,8 +6,19 @@
   <title>Painel de administração — Órbita</title>
 </head>
 <body>
-  <!-- Painel de edição do site. O cliente acessa "seusite.com/admin"
-       faz login e edita textos, portfólio e depoimentos por aqui. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
